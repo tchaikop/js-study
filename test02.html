@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>자기소개</h1>
+
+    <textarea
+      id="test"
+      rows="50"
+      cols="200"
+      placeholder="50자 이내만 입력가능"
+    ></textarea>
+    <button onclick="introcheck()">글자수 확인</button>
+
+    <script>
+      function introcheck() {
+        const textarea = document.getElementById("test").value;
+
+        if (textarea.length > 50) {
+          alert("50자가 넘었습니다");
+        }
+      }
+    </script>
+  </body>
+</html>
