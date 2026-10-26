@@ -157,3 +157,63 @@ footer small {
 footer p {
   margin: 5px;
 }
+/* board.html의 목록 디자인 */
+/* 게시판 페이지 제목 */
+
+.page-title {
+  background-color: #eaf6fb;
+  padding: 30px 8%; /* 위 아래는 30px 양 옆은 8% */
+}
+.page-title h1 {
+  color: #075b91;
+  margin: 0;
+}
+.page-title p {
+  color: #526f82;
+  margin: 0;
+}
+/* 게시판 검색 */
+.board-search {
+  display: flex;
+  justify-content: flex-end; /* 오늘 쪽 정령 */
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.board-search input {
+  width: 260px;
+  padding: 10px;
+  border: 1px solid #cbdbe5;
+}
+
+/*게시판의 글 목록 테이블 */
+.board-table {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  border-collapse: collapse; /* 테이불 열과 열 사이 선을 삭제 */
+}
+.board-table th {
+  background-color: #0c795d;
+  padding: 13px;
+  color: #29465d;
+}
+.board-table td {
+  padding: 13px 8px;
+  border-bottom: 1px solid blueviolet;
+}
+
+.board-table .subject {
+  text-align: left;
+  width: 50%;
+}
+.board-table .subject a:hover {
+  text-decoration: underline;
+  color: #0876b8;
+}
+
+.board-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
