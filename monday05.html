@@ -3,7 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>키오스크</title>
   </head>
-  <body></body>
+  <body>
+    <h1>커피 전문점 키오스크</h1>
+    <h2>메뉴 선택</h2>
+    <hr />
+    <p>
+      아메리카노 2000원
+      <input type="number" id="americano" value="0" min="0" /> 잔
+    </p>
+    <p>
+      카페라떼 3000원
+      <input type="number" id="latte" value="0" min="0" /> 잔
+    </p>
+    <p>
+      딸기라떼 4000원
+      <input type="number" id="berry" value="0" min="0" /> 잔
+    </p>
+    <hr />
+    <button type="button" onlclick="order()">주문하기</button>
+    <button type="button" onclick="reset()">초기화</button>
+    <hr />
+    <hr />
+    <h2>주문내역</h2>
+    <p id="ame">아메리카노 :0잔 0원</p>
+    <p id="lat">카페라떼 :0잔 0원</p>
+    <p id="ber">딸기라떼 :0잔 0원</p>
+    <h2 id="total">총 결제 금액 : 0 원</h2>
+
+    <script>
+      const americanoPrice = 2000;
+      const lattePrice = 3000;
+      const berryPrice = 4000;
+
+      function order() {
+        let americano = document.getElementById("americano").value;
+        let latte = document.getElementById("latte").value;
+        let berry = document.getElementById("berry").value;
+
+        let americanoTotal = americano * americanoPrice;
+        let latteTotal = latte * lattePrice;
+        let berryTotal = berry * berryPrice;
+
+        let total = americanoTotal + latteTotal + berryTotal;
+
+        document.getElementById("ame").textContent =
+          "아메리카노:" + americano + "잔" + americanoTotal + "원";
+        document.getElementById("lat").textContent =
+          "카페라테:" + latte + "잔" + latteTotal + "원";
+        document.getElementById("ber").textContent =
+          "딸기라테:" + berry + "잔" + berryTotal + "원";
+
+        document.getElementById("total").textContent = "총결제:" + total + "원";
+      }
+      function reset() {
+        document.getElementById("americano").value = 0;
+        document.getElementById("latte").value = 0;
+        document.getElementById("berry").value = 0;
+
+        document.getElementById("ame").textContent = "아베리카노 : 0잔 0원";
+        document.getElementById("lat").textContent = "카페라떼 0잔 0원";
+        document.getElementById("ber").textContent = " 딸기라떼 0 잔 0원";
+      }
+    </script>
+  </body>
 </html>
