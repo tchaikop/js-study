@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      textarea {
+        width: 300px;
+        height: 120px;
+      }
+    </style>
+    <title>게시판 글쓰기</title>
+  </head>
+  <body>
+    <h2>문의 내용 작성</h2>
+    <hr />
+    <textarea
+      id="message"
+      cols="30"
+      placeholder="문의 내용을 10자 이내로 입력하세요"
+    ></textarea>
+    <p id="counter">0/10자</p>
+
+    <script>
+      const message = document.getElementById("message");
+      const counter = document.getElementById("counter");
+      message.addEventListener("input", function () {
+        let messagelength = message.value.length;
+        counter.textContent = messagelength + " / 10자";
+
+        if (messagelength >= 10) {
+          alert("글지수 초과");
+        }
+      });
+      //사용자가 입력창에 뭔가를 입력하거나 지우거나 복붙하거나 하는 event
+    </script>
+  </body>
+</html>
