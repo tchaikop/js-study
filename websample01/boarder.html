@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>게시판 만들기</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">PHARMA</a>
+      </div>
+      <nav>
+        <a href="index.html">홈</a>
+        <a href="#">회사소개</a>
+        <a href="#">제품소개</a>
+        <a href="board.html">게시판</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <h1>게시판</h1>
+        <p>새로운 소식을 접해보세요</p>
+      </section>
+
+      <section class="content-section">
+        <div class="board-search">
+          <input
+            type="text"
+            id="searchText"
+            placeholder="검색할 제목을 입력하세요"
+          />
+          <button class="button" onclick="">검색</button>
+        </div>
+      </section>
+
+      <table class="board-table">
+        <thead>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성지</th>
+            <th>작성일</th>
+        </tr>
+        </thead>
+
+        <tbody id=boardList">
+
+         <tr>
+            <td>3</td>
+            <td>올바른 의약품</td>
+            <td>관리자</td>
+            <td>2025.08.12</td>
+        </tr>
+
+         <tr>
+            <td>2</td>
+            <td>약품 개발을 잘하자</td>
+            <td>관리자</td>
+            <td>2025.8.3</td>
+        </tr>
+
+
+         <tr>
+            <td>1</td>
+            <td>신제품 다시 풀시</td>
+            <td>홍길동</td>
+            <td>2025.02.3</td>
+        </tr>
+        </tbody>
+
+        <div class="board-buttom">
+            <div class="page-number">
+
+                <a href="#">1</a>
+                 <a href="#">2</a>
+                  <a href="#">3</a>
+            </div>
+            <a href="#" class="button">글쓰기</a>
+        </div>
+
+      </table>
+    </main>
+
+    <footer>
+      <p>PHARMA</p>
+      <p>주소: 서울이야 | 대표전화: 02-5662-2566</p>
+      <small>Copyright 2025 PHARMA</small>
+    </footer>
+  </body>
+</html>
