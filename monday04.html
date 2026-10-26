@@ -3,7 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>숫자 자바스크립트 예제</title>
   </head>
-  <body></body>
+  <body>
+    <h1>숫자 증가 프로그램</h1>
+    <h2 id="number">0</h2>
+    <button type="button" onclick="increase()">증가</button>
+    <button type="button" onclick="decrease()">감소</button>
+    <button type="button" onclick="reset()">초기화</button>
+
+    <script>
+      let count = 0;
+
+      function increase() {
+        //증가버튼
+        count++;
+        console.log(count);
+        document.getElementById("number").textContent = count;
+      }
+
+      function decrease() {
+        //감소버튼
+        count--;
+        document.getElementById("number").textContent = count;
+        console.log(count);
+      }
+      function reset() {
+        //초기화 버튼
+        count = 0;
+        document.getElementById("number").textContent = count;
+        console.log(count);
+      }
+    </script>
+  </body>
 </html>
