@@ -233,6 +233,95 @@ footer p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+/* 게시판 목록 디자인 */
+
+/* 게시판 페이지 banner */
+.page-title {
+  background-color: #dce7ef;
+  padding: 25px 8%;
+}
+.page-title h1 {
+  color: rgb(27, 1, 1);
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.page-title p {
+  color: rgb(39, 1, 1);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*게시판 검색도구 디자인 */
+.board-search {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.board-search select {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid rgb(34, 22, 4);
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+.board-search input {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid rgb(34, 22, 4);
+  border-radius: 5px;
+  background-color: aliceblue;
+  width: 250px;
+}
+.push-right {
+  margin-left: auto;
+}
+.board-table .subject {
+  text-align: left;
+}
+.board-table .subject a {
+  color: #051622;
+  text-decoration: underline;
+}
+
+/*게시판 목록 테이블*/
+.board-table {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  border-collapse: collapse; /* 열과 열 사이의 줄 없애기 */
+}
+.board-table th {
+  padding: 13px 7px;
+  background-color: #075b9b;
+  color: rgb(65, 3, 3);
+}
+.board-table td {
+  padding: 13px 7px;
+  border-bottom: ipx solid rgb(67, 71, 71);
+}
+.board-table .subject {
+  text-align: left;
+}
+.board-table .subject a:hover {
+  text-decoration: underline;
+  color: aqua;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+}
+.pagination a:hover {
+  color: bisque;
+}
+
+.pagination .active {
+  background-color: #075b9b;
+  color: aliceblue;
+}
+
 /* 모바일 화면 보기 좋게 배치 (700px)*/
 
 @media (max-width: 700px) {
