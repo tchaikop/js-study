@@ -102,3 +102,119 @@ nav a:hover {
 .red-button {
   background-color: rgb(95, 6, 48);
 }
+/* content 공통 속성 */
+.content {
+  max-width: 1100px;
+  margin: 0 auto; /* 가운데 정렬 */
+  padding: 30px 20px;
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content h2 {
+  font-size: 22px;
+  color: rgb(77, 48, 5);
+}
+.section-head a {
+  color: rgb(13, 16, 196);
+}
+/* 상품 카드 리스트 디자인 */
+.product-list {
+  display: flex;
+  gap: 15px;
+}
+.product-card {
+  flex: 1;
+  border: 1px solid rgb(248, 237, 217);
+  border-radius: 7px;
+  background-color: aliceblue;
+}
+.product-card img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background-color: #dce7ef;
+}
+.product-info {
+  padding: 12px;
+}
+.product-info h3 {
+  font-size: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.product-info .price {
+  font-weight: bold;
+  color: blue;
+  margin-top: 5px;
+}
+/* 서비스 리스트 디자인 */
+.service-list {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  padding: 20px;
+  gap: 15px;
+  background-color: antiquewhite;
+  border-radius: 6px;
+}
+.service-list div {
+  flex: 1;
+  text-align: center;
+}
+.service-list span {
+  display: block;
+  font-size: 25px;
+}
+.service-list b {
+  color: rgb(202, 135, 222);
+}
+.service-list p {
+  font-size: 12px;
+  color: blueviolet;
+  margin-top: 3px;
+}
+/* 공지 사항과 브랜드 */
+.bottom-content {
+  display: flex;
+  gap: 30px;
+}
+.bottom-content div {
+  flex: 1;
+}
+.notice-list {
+  list-style: none;
+  padding: 0; /* 리스트 에서 말머리 기호 때문의 여백 영역 제거 */
+  border-top: 1px solid gray;
+}
+.notice-list li {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+.notice-list span {
+  font-size: 12px;
+  color: gray;
+}
+.brand-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap; /* 공간이 없으면 자동 줄 바꿈 */
+}
+.brand-list span {
+  width: 32%;
+  box-sizing: border-box;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #075b9b;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 공통 footer */
