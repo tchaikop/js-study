@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "맑은 고딕";
+  background-color: aliceblue;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* header 디자인 */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 6%;
+  gap: 20px;
+  background-color: aliceblue;
+  border-bottom: 1px solid #dce7ef;
+}
+.logo {
+  font-size: 22px;
+  color: #075b9b;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(2, 2, 37);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav a:hover {
+  color: aqua;
+}
+.header-icons {
+  display: flex;
+  gap: 14px;
+  font-size: 20px;
+}
+
+/* main banner */
+
+.banner {
+  min-height: 300px;
+  padding: 35px 8%;
+  background-color: rgb(198, 209, 223);
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+}
+.banner .small-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(8, 8, 185);
+}
+.banner h1 {
+  font-size: 34px;
+  color: rgb(49, 3, 3);
+  margin-top: 8px;
+  margin-bottom: 9px;
+}
+.banner h1 span {
+  color: rgb(78, 17, 190);
+}
+.banner p {
+  color: rgb(38, 13, 107);
+}
+.banner img {
+  width: 40%;
+  height: 230px;
+  object-fit: cover; /* 비율유지 되게 딱 맞게 */
+  border-radius: 8px;
+}
+/* 공통 버튼 디자인 */
+.button {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  font-size: 13px;
+  padding: 10px;
+}
+.button:hover {
+  background-color: cadetblue;
+}
+/* green, gray, red */
+.green-button {
+  background-color: rgb(6, 131, 138);
+}
+.gray-button {
+  background-color: cadetblue;
+}
+.red-button {
+  background-color: rgb(95, 6, 48);
+}
