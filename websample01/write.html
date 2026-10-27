@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>게시판 만들기</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">PHARMA</a>
+      </div>
+      <nav>
+        <a href="index.html">홈</a>
+        <a href="#">회사소개</a>
+        <a href="#">제품소개</a>
+        <a href="board.html">게시판</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <h1>게시판</h1>
+        <p>새로운 소식을 접해보세요</p>
+      </section>
+      <!-- <! 공통디자인 -->
+      <section class="content-section form-section">
+        <h2>글쓰기</h2>
+        <form>
+          <label>제목</label>
+          <input type="text" id="title" placeholder="제목을 입력하세요" />
+
+          <label>작성자</label>
+          <input type="text" id="writer" placeholder="작성자를 입력하세요" />
+
+          <label>내용</label>
+          <textarea
+            id="content"
+            rows="10"
+            placeholder="내용을 입력하세요"
+          ></textarea>
+        </form>
+
+        <div class="form-button">
+          <button type="sumit" class="button">등록하기</button>
+          <a href="board.html" class="button button-gray">취소하기</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>PHARMA</p>
+      <p>주소: 서울이야 | 대표전화: 02-5662-2566</p>
+      <small>Copyright 2025 PHARMA</small>
+    </footer>
+  </body>
+</html>

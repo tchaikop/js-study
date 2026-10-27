@@ -222,3 +222,81 @@ footer p {
   padding: 5px 10px;
   border-radius: 4px;
 }
+/* 게시글 내용 보기 디자인 */
+
+.article-section h2 {
+  border-bottom: 1px solid #dce8ef;
+  padding-bottom: 15px;
+}
+
+.article-info {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #0876b8;
+  font-size: 13px;
+  border-bottom: #168fd4;
+}
+.article-content {
+  padding: 20px;
+  min-height: 250px;
+}
+.article-content h3 {
+  color: #168fd4;
+}
+.article-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.button-gray {
+  background-color: #718493;
+}
+.button-gray:hover {
+  background-color: #536775;
+}
+.prev-next p {
+  border: 1px solid #cbdbe5;
+  padding: 10px;
+}
+.prev-next {
+  padding-top: 0;
+}
+.prev-next b {
+  color: #075b80;
+}
+/* 게시판 글쓰기 디자인 */
+
+.form-section {
+  max-width: 800px;
+}
+
+.form-section form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+
+  font-weight: bold;
+}
+.form-section input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  font-family: inherit; /* 상위 태그에서 지정한 글꼴로 상속 */
+}
+.form-section textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  font-family: inherit;
+  resize: vertical; /* 세로로만 영역 늘리기 허용 */
+}
+.article-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
