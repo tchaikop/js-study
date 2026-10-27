@@ -218,3 +218,18 @@ nav a:hover {
 }
 
 /* 공통 footer */
+footer {
+  text-align: center;
+  background-color: rgb(3, 3, 51);
+  color: white;
+  padding: 25px 15px;
+  font-size: 13px;
+  margin-top: 25px;
+}
+footer small {
+  color: aqua;
+}
+footer p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
