@@ -381,6 +381,46 @@ footer p {
 .article-body h3 {
   color: #075b9b;
 }
+
+/* write.html */
+
+.form-content {
+  max-width: 850px;
+  /* border: 1px solid red; */
+}
+.form-content label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.form-content input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.form-content textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-family: inherit;
+  resize: vertical; /* 사용자가 세로로만 내려가게 */
+  font-size: 16px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+
 /* 모바일 화면 보기 좋게 배치 (700px)*/
 
 @media (max-width: 700px) {
