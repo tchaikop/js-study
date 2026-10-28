@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "맑은 고딕" Arial;
+  color: #333;
+  background-color: aliceblue;
+  line-height: 1.5;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.wrap {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* top 디자인 */
+
+.top {
+  background-color: #002244;
+  color: #abeafe;
+  font-size: 15px;
+  padding: 15px 0;
+}
+.topin {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.headin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+}
+header {
+  background-color: #003366;
+  color: white;
+}
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-weight: bold;
+  border-radius: 50%; /* 동그란 테두리 */
+  background-color: aliceblue;
+  color: #003366;
+  font-size: 22px;
+}
+.logo b {
+  display: block;
+  font-size: 25px;
+}
+.logo small {
+  font-size: 10px;
+  color: #abeafe;
+  letter-spacing: 1px;
+}
+nav {
+  display: flex;
+  gap: 5px;
+  background-color: #002855;
+  font-size: 13px;
+  padding: 6px;
+  border-radius: 8px;
+}
+nav a {
+  color: aliceblue;
+  padding: 9px 12px;
+}
+nav a:hover {
+  background-color: rgb(7, 41, 151);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+/* main 디자인 들어간다 */
+
+main {
+  padding-top: 30px;
+  padding-bottom: 45px;
+  min-height: 600px;
+}
+.hero {
+  background: linear-gradient(110deg, #003366, #005599);
+  border-radius: 14px;
+  color: white;
+  padding: 40px;
+  position: relative; /* 부모 박스 위치 지정하고 아래에서 로고가 내려가도록 하는 거야 */
+}
+.pill {
+  background-color: #245985;
+  border: 1px solid #6496c4;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 11px;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+.hero p {
+  font-size: 14px;
+  color: #dbeafe;
+  margin-bottom: 25px;
+}
+/* 공통 버튼 디자인 */
+.btn {
+  border: 0;
+  text-align: center;
+  padding: 10px 17px;
+  font-family: inherit;
+  background-color: pink;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.btn:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+/* 오렌지 버튼 디자인 , 흰색 버튼 디자인 따로 */
+.orange-btn {
+  background-color: #e67e22;
+  color: aliceblue;
+}
+.white-btn {
+  background-color: aliceblue;
+  color: #003366;
+  margin-left: 5px;
+}
+.watermark {
+  font-size: 150px;
+  font-weight: bold;
+  opacity: 0.1;
+  color: white;
+  position: absolute; /* hero에서 relative로 지정하고 여기서 옮기는거야 */
+  right: 20px;
+  bottom: -30px;
+}
