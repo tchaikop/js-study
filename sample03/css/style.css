@@ -285,3 +285,24 @@ main {
   font-size: 11px;
   color: #647464;
 }
+
+/* footer */
+footer {
+  background-color: #0663bb;
+  color: #e2e8f0;
+  padding: 28px 0;
+  font-size: 13px;
+}
+.footerlink {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #ccd6e4;
+  border-bottom: 1px solid rgb(34, 2, 2);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.footerlink p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
