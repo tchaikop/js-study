@@ -191,3 +191,97 @@ main {
   color: #647464;
   margin-top: 5px;
 }
+/* 학사 뉴스 섹션 */
+
+.news {
+  display: flex;
+  gap: 15px;
+  margin-top: 27px;
+}
+.panel {
+  flex: 1;
+  border: 1px solid #6496c4;
+  border-radius: 10px;
+  padding: 22px;
+}
+.notice-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #03192e;
+  margin-bottom: 15px;
+}
+.notice-title a {
+  color: #245985;
+  font-size: 12px;
+}
+.notice-title h2 {
+  font-size: 17px;
+}
+
+.news-title small {
+  color: #245985;
+  font-size: 12px;
+}
+.news-title h2 {
+  font-size: 17px;
+}
+
+.news-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #03192e;
+  margin-bottom: 15px;
+}
+.notice-content {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.notice-content li {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 0;
+  align-items: center;
+}
+.notice-content em {
+  background-color: rgb(250, 235, 215);
+  border-radius: 6px;
+  font-style: normal;
+  font-size: 11px;
+  padding: 2px 7px;
+  color: red;
+}
+
+.notice-content span {
+  font-size: 11px;
+  color: #647464;
+}
+.news-content {
+  display: flex;
+  gap: 10px;
+}
+.news-content img {
+  border-radius: 7px;
+  object-fit: cover;
+  width: 120px;
+  height: 90px;
+}
+.news-content b {
+  font-size: 12px;
+  color: #6496c4;
+}
+.news-content h3 {
+  font-size: 13px;
+  margin: 5px 0;
+}
+.news-content p {
+  font-size: 13px;
+  color: #6496c4;
+}
+.news-content span {
+  font-size: 11px;
+  color: #647464;
+}
