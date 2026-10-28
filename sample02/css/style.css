@@ -326,14 +326,23 @@ footer p {
   text-align: left;
   border-bottom: 1px solid black;
   color: #075b9b;
-  margin-bottom: 20px;
-  padding: 20px;
+  /* margin-bottom: 20px; */
+  padding-bottom: 20px;
 }
 .article-content .article-info {
-  padding: 10px;
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  padding: 12px 0;
   border-bottom: 1px solid black;
   margin-bottom: 30px;
 }
+
+.article-body {
+  padding: 25px 5px;
+  min-height: 250px;
+}
+
 .article-content span {
   margin-left: 20px;
   font-weight: bold;
@@ -345,7 +354,12 @@ footer p {
   justify-content: flex-end;
   gap: 10px;
 }
+
+.pre-next {
+  padding-top: 0;
+}
 .pre-next p {
+  display: flex; /* gap 때문에 flex를 잡은거다 */
   padding: 8px;
   border: 1px solid gray;
   border-radius: 5px;
