@@ -556,3 +556,66 @@ td:nth-child(3) {
   text-align: center;
   margin-top: 20px;
 }
+
+/* 게사판 글쓰기 */
+.formpanel {
+  background-color: white;
+  border: 1px solid #0663bb;
+  border-radius: 10px;
+  padding: 30px;
+}
+.form-row {
+  display: flex;
+  gap: 25px;
+}
+.form-row .field {
+  flex: 1;
+}
+.field {
+  margin-bottom: 22px;
+}
+.field label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #002244;
+  margin-bottom: 8px;
+}
+.field .red {
+  color: red;
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+}
+.field textarea {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid #0358ad;
+  border-radius: 5px;
+  background-color: white;
+  font-family: inherit;
+  resize: vertical;
+}
+.field input[readonly] {
+  background-color: #ccd6e4;
+  color: #003366;
+}
+.upload {
+  padding: 20px;
+  text-align: center;
+  background-color: #e2e5eb;
+  border: 1px dashed #0358ad;
+  border-radius: 7px;
+}
+.upload p {
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.upload small {
+  font-size: 11px;
+  color: #0358ad;
+  margin-bottom: 20px;
+}
