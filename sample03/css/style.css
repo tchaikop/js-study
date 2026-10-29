@@ -353,6 +353,7 @@ input {
 .navy-btn {
   background-color: #003366;
   color: white;
+  margin-left: 5px;
 }
 .tablebox {
   border: 1px solid #64748b;
@@ -415,3 +416,143 @@ td:nth-child(3) {
 }
 
 /* 게시판 글 내용보기 */
+
+.back {
+  color: #245985;
+  font-size: 11px;
+}
+.article {
+  border: 1px solid #6496c4;
+  border-radius: 5px;
+  background-color: white;
+}
+.articlehead {
+  background-color: #ccd6e4;
+  padding: 26px;
+  border-bottom: 1px solid wheat;
+}
+.articlehead h1 {
+  color: #033a6d;
+  font-size: 23px;
+  margin-top: 15px;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+.articlehead .meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #003366;
+  gap: 10px;
+  border-top: 1px solid #002855;
+  padding-top: 12px;
+}
+.articlehead small {
+  font-size: 11px;
+  color: #033a6d;
+}
+.articlehead em {
+  border-radius: 30px;
+  background-color: rgb(238, 40, 40);
+  color: #002244;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.articlebody {
+  padding: 30px;
+  min-height: 250px;
+  font-size: 14px;
+  line-height: 2;
+}
+.schedule {
+  border: 1px solid #0358ad;
+  background-color: #e2e8f0;
+  border-radius: 5px;
+  padding: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.schedule h3 {
+  color: #033a6d;
+  font-size: 15px;
+  margin-top: 0;
+  margin-left: 0;
+}
+.articlebody ul {
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+.file-attachment {
+  border-top: 1px solid #6496c4;
+  padding: 15px;
+  background-color: rgb(238, 231, 231);
+  font-size: 12px;
+}
+.file-attachment p {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e2e8f0;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: white;
+}
+.file-attachment a {
+  color: #0663bb;
+  font-weight: bold;
+}
+.comments {
+  padding: 25px;
+  margin-top: 25px;
+  background-color: white;
+  border: 1px solid #245985;
+  border-radius: 5px;
+}
+.comments h2 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.comments-count {
+  color: #0663bb;
+  font-size: 12px;
+}
+.comment {
+  border-bottom: 1px solid #ccd6e4;
+  font-size: 12px;
+  padding: 15px;
+}
+.comment b {
+  color: #334155;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comment span {
+  color: #64748b;
+  font-size: 11px;
+}
+.comment.reply {
+  margin-left: 25px;
+  padding-left: 15px;
+  border-left: 2px solid #6496c4;
+  margin-bottom: 20px;
+}
+.comments textarea {
+  width: 100%;
+  border: 1px solid #0358ad;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1opx;
+  resize: vertical;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  border-top: 1px solid #2563a8;
+  margin-top: 20px;
+}
+.write-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
